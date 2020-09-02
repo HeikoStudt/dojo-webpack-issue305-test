@@ -1,0 +1,26 @@
+{
+  "name": "private-dojo-webpack-issuetest",
+  "version": "1.0.0",
+  "description": "The private minimal test for a dojo-webpack issue",
+  "private": true,
+  "scripts": {
+    "build": "webpack --profile",
+    "serve": "webpack-dev-server --profile --progress -d --env.dev --mode development --display-error-details",
+    "generate:loader": "node node_modules/dojo-webpack-plugin/buildDojo/build.js node_modules/dojo/dojo.js ./release"
+  },
+  "author": "HeikoStudt",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "amd-loader": "0.0.8",
+    "dojo-util": "^1.16.3",
+    "file-loader": "^6.0.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "dojo": "^1.16.3",
+    "dojo-webpack-plugin": "^2.8.15",
+    "source-map": "^0.7.3",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
