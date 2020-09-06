@@ -13,6 +13,7 @@ module.exports = env => { return {
     publicPath: "",
     library: "MyLibrary",
     libraryTarget: "var",
+    //libraryExport: "default", // this might hide the fact, that dojo.js is exported
   },
 
   devtool: "source-map",
